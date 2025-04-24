@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate | Kind Roots Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Kind Roots Foundation Logo" class="logo">
+    <h1>Support Our Mission</h1>
+    <p>Help us spread kindness from the roots.</p>
+  </header>
+
+  <main style="padding: 20px;">
+    <h2>Donation Form</h2>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6g33-ufAkyFUddmEb-XjtK4qpzDfTNzdswslWUp7Ej38VNA/viewform?embedded=true" 
+width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      <p>
+        <strong>We also accept crypto donations.</strong> Please contact us for wallet details.contact: ‪+1 (657) 453‑4671‬
+      </p>
+
+      <button type="submit">Submit Donation</button>
+    </form>
+  </main>
+<<hr>
+<h3>Crypto Donation (Optional)</h3>
+<p>You can donate directly via Bitcoin (BTC) using the wallet address below:</p>
+
+<div style="background: #f9f9f9; padding: 10px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center;">
+  <span id="wallet-address" style="word-wrap: break-word;">bc1qnh9ntufr5ftc5lkpcl6ghhhvjxw5vtec6apr9l</span>
+  <button onclick="copyWallet()" style="margin-left: 10px; padding: 5px 10px;">Copy</button>
+</div>
+
+<p>If you'd prefer to speak with us before donating crypto, feel free to contact us on WhatsApp at <strong>+1 (657) 453-4671</strong>.</p>
+<hr>
+
+<script>
+  function copyWallet() {
+    const walletText = document.getElementById("wallet-address").innerText;
+    navigator.clipboard.writeText(walletText).then(() => {
+      alert("Wallet address copied!");
+    });
+  }
+</script>
+  <footer style="text-align: center; padding: 20px;">
+    <p>&copy; 2025 Kind Roots Foundation. All rights reserved.</p>
+ 
